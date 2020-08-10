@@ -12,8 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('erd');
 });
+
+
+
 
 Route::get('/items/create', 'ItemController@create'); // menampilkan halaman form
 Route::post('/items', 'ItemController@store'); // menyimpan data
